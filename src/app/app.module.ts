@@ -10,6 +10,10 @@ import { NoticiasComponent } from './secciones/noticias/noticias.component';
 import { MembresiasComponent } from './secciones/membresias/membresias.component';
 import { ConveniosComponent } from './secciones/convenios/convenios.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { AngularFireDatabaseModule } from 'angularfire2/database'
+import { AngularFireModule } from 'angularfire2'
+import { environment } from '../environments/environment';
+import { ArticuloComponent } from './articulo/articulo.component'
 
 @NgModule({
   declarations: [
@@ -20,12 +24,15 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     ProgramasComponent,
     NoticiasComponent,
     MembresiasComponent,
-    ConveniosComponent
+    ConveniosComponent,
+    ArticuloComponent
   ],
   imports: [
     BrowserModule,
     Ng2PageScrollModule,
     AppRoutingModule,
+    AngularFireModule.initializeApp(environment),
+    AngularFireDatabaseModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
