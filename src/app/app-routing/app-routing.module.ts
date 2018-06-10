@@ -13,7 +13,7 @@ import { ArticuloComponent } from '../articulo/articulo.component';
       {path: 'programas', component: ProgramasComponent},
       {path: 'membresias', component: MembresiasComponent},
       {path: 'convenios', component: ConveniosComponent},
-      {path: 'articulo', component: ArticuloComponent}
+      {path: 'articulo', component: ArticuloComponent},
     ];
 
     @NgModule({
