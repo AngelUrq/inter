@@ -24,7 +24,8 @@
     "angularfire2": "^5.0.0-rc.10",
     "core-js": "^2.5.4",
     "firebase": "^5.0.4",
-    "ng2-page-scroll": "^4.0.0-beta.12",
+    "ngx-facebook": "^2.4.0",
+    "ngx-page-scroll": "^5.0.0",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },
@@ -39,7 +40,7 @@
     "codelyzer": "~4.2.1",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
-    "karma": "^2.0.3",
+    "karma": "^2.0.4",
     "karma-chrome-launcher": "~2.2.0",
     "karma-coverage-istanbul-reporter": "~2.0.0",
     "karma-jasmine": "~1.1.1",

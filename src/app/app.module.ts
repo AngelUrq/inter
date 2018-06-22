@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PortadaComponent } from './portada/portada.component';
-import { Ng2PageScrollModule } from 'ng2-page-scroll';
 import { ContactoComponent } from './contacto/contacto.component';
 import { ProgramasComponent } from './secciones/programas/programas.component';
 import { NoticiasComponent } from './secciones/noticias/noticias.component';
@@ -14,6 +13,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database'
 import { AngularFireModule } from 'angularfire2'
 import { environment } from '../environments/environment';
 import { ArticuloComponent } from './articulo/articulo.component'
+import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { FacebookModule } from 'ngx-facebook';
 
 @NgModule({
   declarations: [
@@ -29,10 +30,11 @@ import { ArticuloComponent } from './articulo/articulo.component'
   ],
   imports: [
     BrowserModule,
-    Ng2PageScrollModule,
     AppRoutingModule,
+    NgxPageScrollModule,
     AngularFireModule.initializeApp(environment),
     AngularFireDatabaseModule,
+    FacebookModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
