@@ -26,6 +26,7 @@
     "firebase": "^5.0.4",
     "ngx-facebook": "^2.4.0",
     "ngx-page-scroll": "^5.0.0",
+    "ngx-youtube-player": "^6.0.0",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },

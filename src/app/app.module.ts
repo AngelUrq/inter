@@ -15,6 +15,7 @@ import { environment } from '../environments/environment';
 import { ArticuloComponent } from './articulo/articulo.component'
 import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { FacebookModule } from 'ngx-facebook';
+import { YoutubePlayerModule } from 'ngx-youtube-player';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { FacebookModule } from 'ngx-facebook';
     AngularFireModule.initializeApp(environment),
     AngularFireDatabaseModule,
     FacebookModule.forRoot(),
+    YoutubePlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
