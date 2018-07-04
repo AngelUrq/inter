@@ -18,6 +18,7 @@ import { FacebookModule } from 'ngx-facebook';
 import { YoutubePlayerModule } from 'ngx-youtube-player';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarruselComponent } from './carrusel/carrusel.component';
+import { CargarComponent } from './cargar/cargar.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CarruselComponent } from './carrusel/carrusel.component';
     MembresiasComponent,
     ConveniosComponent,
     ArticuloComponent,
-    CarruselComponent
+    CarruselComponent,
+    CargarComponent
   ],
   imports: [
     BrowserModule,

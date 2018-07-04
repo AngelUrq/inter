@@ -49,6 +49,15 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
+h1{
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
 .bg-primary {
   background-color: rgb(41,47,109) !important;
 }
@@ -122,11 +131,9 @@ header.masthead p {
   }
 }
 
-@media (min-width: 1200px) {
-  header.masthead h1 {
-    font-size: 4rem;
-  }
-}
+h5{
+  font-size: 1.4em;
+}    
 
 .service-box {
   max-width: 400px;

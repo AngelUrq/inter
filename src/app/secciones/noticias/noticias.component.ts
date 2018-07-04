@@ -9,7 +9,7 @@ import { FacebookService } from 'ngx-facebook';
 export class NoticiasComponent implements OnInit {
 
   player: YT.Player;
-  private id: string = 'Sp9SeV_abnA';
+  id: string = 'Sp9SeV_abnA';
 
   constructor(private fb: FacebookService) {
     fb.init({
