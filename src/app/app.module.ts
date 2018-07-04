@@ -16,6 +16,8 @@ import { ArticuloComponent } from './articulo/articulo.component'
 import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { FacebookModule } from 'ngx-facebook';
 import { YoutubePlayerModule } from 'ngx-youtube-player';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarruselComponent } from './carrusel/carrusel.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { YoutubePlayerModule } from 'ngx-youtube-player';
     NoticiasComponent,
     MembresiasComponent,
     ConveniosComponent,
-    ArticuloComponent
+    ArticuloComponent,
+    CarruselComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import { YoutubePlayerModule } from 'ngx-youtube-player';
     AngularFireModule.initializeApp(environment),
     AngularFireDatabaseModule,
     FacebookModule.forRoot(),
-    YoutubePlayerModule
+    YoutubePlayerModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
