@@ -17,7 +17,6 @@ export class CarruselComponent implements OnInit {
     config.showNavigationArrows = true;
   }
 
-
   ngOnInit() {
   }
 
