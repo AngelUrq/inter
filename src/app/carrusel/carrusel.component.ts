@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgbCarouselConfig, NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'carrusel',
@@ -8,16 +8,22 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class CarruselComponent implements OnInit {
 
+  @ViewChild('carousel') carousel: NgbCarousel;
+
   constructor(config: NgbCarouselConfig) {
-    // customize default values of carousels used by this component tree
-    config.interval = 10000;
+    config.interval = -1;
     config.wrap = true;
     config.keyboard = false;
     config.pauseOnHover = false;
     config.showNavigationArrows = true;
   }
-
+  
   ngOnInit() {
+  }
+
+  empezarCarrusel(){
+    this.carousel.interval = 5000;
+    this.carousel.cycle();
   }
 
 }

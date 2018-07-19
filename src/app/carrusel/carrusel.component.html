@@ -1,6 +1,6 @@
-<ngb-carousel>
+<ngb-carousel #carousel>
   <ng-template ngbSlide>
-      <img class="img-fluid" src="http://aiblat2019.org/wp-content/uploads/2018/05/DJI_0212.00_03_19_17.Imagen-fija013.jpg" alt="Random first slide">
+      <img class="img-fluid" src="http://aiblat2019.org/wp-content/uploads/2018/05/DJI_0212.00_03_19_17.Imagen-fija013.jpg" alt="Random first slide" (load)="empezarCarrusel()">
       <div class="carousel-caption">
          <header class="masthead text-center text-white d-flex">
             <div class="container my-auto">
