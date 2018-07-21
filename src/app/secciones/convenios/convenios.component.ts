@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-convenios',
+  selector: 'convenios',
   templateUrl: './convenios.component.html',
   styleUrls: ['./convenios.component.scss']
 })

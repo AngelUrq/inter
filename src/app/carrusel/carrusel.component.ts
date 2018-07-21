@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { NgbCarouselConfig, NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
+import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'carrusel',
@@ -8,22 +8,14 @@ import { NgbCarouselConfig, NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
 })
 export class CarruselComponent implements OnInit {
 
-  @ViewChild('carousel') carousel: NgbCarousel;
-
-  constructor(config: NgbCarouselConfig) {
-    config.interval = -1;
-    config.wrap = true;
-    config.keyboard = false;
-    config.pauseOnHover = false;
-    config.showNavigationArrows = true;
+  constructor() { 
   }
-  
+
   ngOnInit() {
   }
 
   empezarCarrusel(){
-    this.carousel.interval = 5000;
-    this.carousel.cycle();
+    $("#carouselExampleIndicators").attr("data-interval", "5000");
   }
 
 }

@@ -11,7 +11,6 @@ export class PortadaComponent implements OnInit {
 
   ngOnInit() {
     console.log("Por Á.Z. ISC");
-    console.log("Nueva versión.");
   }
 
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-membresias',
+  selector: 'membresias',
   templateUrl: './membresias.component.html',
   styleUrls: ['./membresias.component.scss']
 })
