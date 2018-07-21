@@ -82,7 +82,7 @@ img::-moz-selection {
   background: transparent;
 }
 
-header.masthead {
+section.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-image: url("http://blog.avexperience.es/wp-content/uploads/2017/08/Valencia.-Vista-a%C3%A9rea-ciudad-atardecer.png");
@@ -94,39 +94,39 @@ header.masthead {
   background-attachment: fixed;
 }
 
-header.masthead hr {
+section.masthead hr {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-header.masthead h1 {
+section.masthead h1 {
   font-size: 2rem;
 }
 
-header.masthead p {
+section.masthead p {
   font-weight: 300;
 }
 
 @media (min-width: 768px) {
-  header.masthead p {
+  section.masthead p {
     font-size: 1.15rem;
   }
 }
 
 @media (min-width: 992px) {
-  header.masthead {
+  section.masthead {
     height: 100vh;
     min-height: 650px;
     padding-top: 0;
     padding-bottom: 0;
   }
-  header.masthead h1 {
+  section.masthead h1 {
     font-size: 3rem;
   }
 }
 
 @media (min-width: 1200px) {
-  header.masthead h1 {
+  section.masthead h1 {
     font-size: 4rem;
   }
 }

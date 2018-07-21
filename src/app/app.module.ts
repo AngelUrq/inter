@@ -15,6 +15,8 @@ import { MembresiasComponent } from './secciones/membresias/membresias.component
 import { NoticiasComponent } from './secciones/noticias/noticias.component';
 import { ProgramasComponent } from './secciones/programas/programas.component';
 
+import {NgsRevealModule} from 'ng-scrollreveal';
+
 import { FacebookModule } from 'ngx-facebook';
 import { YoutubePlayerModule } from 'ngx-youtube-player';
 
@@ -37,6 +39,7 @@ import { YoutubePlayerModule } from 'ngx-youtube-player';
     NgxPageScrollModule,
     FacebookModule.forRoot(),
     YoutubePlayerModule,
+    NgsRevealModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
