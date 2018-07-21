@@ -59,6 +59,12 @@ export class NavbarComponent implements OnInit {
 
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
+    if(!this.navbarOpen){
+      $('.navbar').addClass('bg-light');
+      $('.elemento-navbar').css("color", "rgb(41,47,109)");
+      $('#logo2').attr("style", "display:none");
+      $('#logo1').attr("style", "");
+    }
   }
 
 }
