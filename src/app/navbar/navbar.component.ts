@@ -13,17 +13,48 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    let navbar = document.getElementById("mainNav");
-    navbar.classList.remove("bg-light");
-    $('p').css("color","white");
-    
-    $('p').mouseover(function(){
-      $(this).css("color","rgb(188, 199, 39)");
-    });
 
-    $('p').mouseout(function(){
-      $(this).css("color","white");
-    });
+    let url = window.location.href;
+
+    console.log();
+
+    if (url.split('/')[3] == "") {
+      $('.elemento-navbar').css("color", "white");
+      $('.elemento-navbar').mouseover(function () {
+        $(this).css("color", "rgb(188, 199, 39)");
+      });
+      $('.elemento-navbar').mouseout(function () {
+        $(this).css("color", "white");
+      });
+
+      (function ($) {
+        $(document).ready(function () {
+          $(window).scroll(function () {
+            if ($(this).scrollTop() > $(window).height() - $('.navbar').height()) {
+              $('.navbar').addClass('bg-light');
+              $('.elemento-navbar').css("color", "rgb(41,47,109)");
+              $('.elemento-navbar').mouseout(function () {
+                $(this).css("color", "rgb(41,47,109)");
+              });
+              $('#logo2').attr("style", "display:none");
+              $('#logo1').attr("style", "");
+            } else {
+              $('.navbar').removeClass('bg-light');
+              $('.elemento-navbar').css("color", "white");
+              $('.elemento-navbar').mouseout(function () {
+                $(this).css("color", "white");
+              });
+              $('#logo2').attr("style", "");
+              $('#logo1').attr("style", "display:none");
+            }
+          });
+        });
+      }($));
+    } else{
+      $('.navbar').addClass('bg-light');
+      $('#logo2').attr("style", "display:none");
+      $('#logo1').attr("style", "");
+    }
   }
 
   toggleNavbar() {
