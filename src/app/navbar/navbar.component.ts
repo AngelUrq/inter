@@ -13,10 +13,7 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
     let url = window.location.href;
-
-    console.log();
 
     if (url.split('/')[3] == "") {
       $('.elemento-navbar').css("color", "white");
@@ -32,18 +29,22 @@ export class NavbarComponent implements OnInit {
           $(window).scroll(function () {
             if ($(this).scrollTop() > $(window).height() - $('.navbar').height()) {
               $('.navbar').addClass('bg-light');
+              
               $('.elemento-navbar').css("color", "rgb(41,47,109)");
               $('.elemento-navbar').mouseout(function () {
                 $(this).css("color", "rgb(41,47,109)");
               });
+
               $('#logo2').attr("style", "display:none");
               $('#logo1').attr("style", "");
             } else {
               $('.navbar').removeClass('bg-light');
               $('.elemento-navbar').css("color", "white");
+
               $('.elemento-navbar').mouseout(function () {
                 $(this).css("color", "white");
               });
+
               $('#logo2').attr("style", "");
               $('#logo1').attr("style", "display:none");
             }

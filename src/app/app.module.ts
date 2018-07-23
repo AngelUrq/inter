@@ -20,6 +20,10 @@ import {NgsRevealModule} from 'ng-scrollreveal';
 import { FacebookModule } from 'ngx-facebook';
 import { YoutubePlayerModule } from 'ngx-youtube-player';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { environment } from '../environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +40,8 @@ import { YoutubePlayerModule } from 'ngx-youtube-player';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
     NgxPageScrollModule,
     FacebookModule.forRoot(),
     YoutubePlayerModule,
