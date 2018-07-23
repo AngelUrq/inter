@@ -36,9 +36,6 @@ export class AppComponent {
         $("body").append(configuracion[0].MENSAJE);
         let imagen = document.createElement("img");
         imagen.src = configuracion[0].IMAGEN;
-        $("body").append(document.createElement("br"));
-        $("body").append(document.createElement("br"));
-        $("body").append(document.createElement("br"));
         $("body").append(imagen);
       }
     });
