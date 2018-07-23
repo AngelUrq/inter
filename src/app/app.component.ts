@@ -6,6 +6,7 @@ import * as $ from 'jquery';
 interface Configuracion{
   ENCENDIDO: boolean;
   MENSAJE: string;
+  IMAGEN: string;
 }
 
 @Component({
@@ -33,6 +34,12 @@ export class AppComponent {
       if(!configuracion[0].ENCENDIDO){
         $("#pagina").remove();
         $("body").append(configuracion[0].MENSAJE);
+        let imagen = document.createElement("img");
+        imagen.src = configuracion[0].IMAGEN;
+        $("body").append(document.createElement("br"));
+        $("body").append(document.createElement("br"));
+        $("body").append(document.createElement("br"));
+        $("body").append(imagen);
       }
     });
   }
