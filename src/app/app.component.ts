@@ -32,11 +32,11 @@ export class AppComponent {
 
     this.configuracionObs.subscribe(configuracion => {
       if(!configuracion[0].ENCENDIDO){
-        $("#pagina").remove();
+        /*$("#pagina").remove();
         $("body").append(configuracion[0].MENSAJE);
         let imagen = document.createElement("img");
         imagen.src = configuracion[0].IMAGEN;
-        $("body").append(imagen);
+        $("body").append(imagen);*/
       }
     });
   }

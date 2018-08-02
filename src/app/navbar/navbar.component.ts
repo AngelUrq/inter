@@ -16,22 +16,24 @@ export class NavbarComponent implements OnInit {
     let url = window.location.href;
 
     if (url.split('/')[3] == "") {
-      $('.elemento-navbar').css("color", "white");
-      $('.elemento-navbar').mouseover(function () {
+      let elemento_navbar =  $('.elemento-navbar');
+
+      elemento_navbar.css("color", "white");
+      elemento_navbar.mouseover(function () {
         $(this).css("color", "rgb(188, 199, 39)");
       });
-      $('.elemento-navbar').mouseout(function () {
+      elemento_navbar.mouseout(function () {
         $(this).css("color", "white");
       });
 
       (function ($) {
         $(document).ready(function () {
           $(window).scroll(function () {
-            if ($(this).scrollTop() > $(window).height() - $('.navbar').height()) {
+            if ($(this).scrollTop() > $(window).height() - $('.navbar').height()) {     
               $('.navbar').addClass('bg-light');
               
-              $('.elemento-navbar').css("color", "rgb(41,47,109)");
-              $('.elemento-navbar').mouseout(function () {
+              elemento_navbar.css("color", "rgb(41,47,109)");
+              elemento_navbar.mouseout(function () {
                 $(this).css("color", "rgb(41,47,109)");
               });
 
@@ -39,9 +41,9 @@ export class NavbarComponent implements OnInit {
               $('#logo1').attr("style", "");
             } else {
               $('.navbar').removeClass('bg-light');
-              $('.elemento-navbar').css("color", "white");
+              elemento_navbar.css("color", "white");
 
-              $('.elemento-navbar').mouseout(function () {
+              elemento_navbar.mouseout(function () {
                 $(this).css("color", "white");
               });
 
@@ -51,6 +53,8 @@ export class NavbarComponent implements OnInit {
           });
         });
       }($));
+
+
     } else{
       $('.navbar').addClass('bg-light');
       $('#logo2').attr("style", "display:none");

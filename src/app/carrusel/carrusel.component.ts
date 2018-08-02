@@ -15,7 +15,6 @@ export class CarruselComponent implements OnInit {
   }
 
   empezarCarrusel(){
-    console.log("Carrusel listo");
     $("#carouselExampleIndicators").attr("data-interval", "5000");
   }
 
