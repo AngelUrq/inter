@@ -1,3 +1,7 @@
+h1{
+    color: rgb(41,47,109);
+}
+
 body {
     padding-top: 70px;
 }
@@ -13,12 +17,14 @@ body {
     }
 }
   
-.portfolio-item {
-    margin-bottom: 30px;
+.btn{
+    background-color: rgb(41,47,109);
+    border-color: rgb(41,47,109);
 }
-  
-.pagination {
-    margin-bottom: 30px;
+
+.btn:hover{
+    background-color: rgba(188, 199, 39, 0.808);
+    border-color: rgba(188, 199, 39, 0.808);
 }
 
 .col-centered {
