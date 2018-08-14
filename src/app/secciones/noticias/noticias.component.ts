@@ -16,7 +16,6 @@ export class NoticiasComponent implements OnInit {
       appId: '1927971220769787',
       version: 'v2.9'
     });
-
   }
 
   savePlayer(player) {

@@ -23,6 +23,7 @@ import { YoutubePlayerModule } from 'ngx-youtube-player';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { environment } from '../environments/environment';
+import { EventosComponent } from './secciones/eventos/eventos.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { environment } from '../environments/environment';
     ConveniosComponent,
     MembresiasComponent,
     NoticiasComponent,
-    ProgramasComponent
+    ProgramasComponent,
+    EventosComponent
   ],
   imports: [
     BrowserModule,

@@ -12,6 +12,10 @@ export class CarruselComponent implements OnInit {
   }
 
   ngOnInit() {
+    $(window).scroll(function(){
+      let wScroll = $(window).scrollTop();
+      $('img').css('background-position', 'center ' + (wScroll) + 'px');
+    });
   }
 
   empezarCarrusel(){

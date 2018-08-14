@@ -53,8 +53,6 @@ export class NavbarComponent implements OnInit {
           });
         });
       }($));
-
-
     } else{
       $('.navbar').addClass('bg-light');
       $('#logo2').attr("style", "display:none");
