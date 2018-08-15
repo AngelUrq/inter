@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Membresia } from '../../interfaces/membresia';
+import { AngularFirestoreCollection, AngularFirestore } from 'angularfire2/firestore';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'membresias',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MembresiasComponent implements OnInit {
 
-  constructor() { }
+  coleccionDeMembresias: AngularFirestoreCollection<Membresia>;
+
+  membresiasObs: Observable<Membresia[]>
+
+  membresias: Membresia[];
+
+  constructor(private afs: AngularFirestore) { }
 
   ngOnInit() {
+    this.coleccionDeMembresias = this.afs.collection('MEMBRESIAS');
+    this.membresiasObs = this.coleccionDeMembresias.valueChanges();
+    this.membresiasObs.subscribe(membresias => this.membresias = membresias);
   }
 
 }
