@@ -3,4 +3,5 @@ export interface Convenio{
     DESCRIPCION: string;
     IMAGEN: string;
     LINK: string;
+    LINK_OFICIAL: string;
 }
