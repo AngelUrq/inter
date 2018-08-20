@@ -24,6 +24,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { environment } from '../environments/environment';
 import { EventosComponent } from './secciones/eventos/eventos.component';
+import { VideoBackgroundComponent } from './video-background/video-background.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { EventosComponent } from './secciones/eventos/eventos.component';
     MembresiasComponent,
     NoticiasComponent,
     ProgramasComponent,
-    EventosComponent
+    EventosComponent,
+    VideoBackgroundComponent
   ],
   imports: [
     BrowserModule,
