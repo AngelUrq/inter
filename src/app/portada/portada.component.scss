@@ -82,6 +82,11 @@ img::-moz-selection {
   background: transparent;
 }
 
+.img-fluid{
+  width: 600px;
+  height: 300px;
+}
+
 section.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
