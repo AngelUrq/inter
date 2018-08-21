@@ -19,7 +19,7 @@ export class ConveniosComponent implements OnInit {
   constructor(private afs: AngularFirestore) { }
 
   ngOnInit() {
-    this.coleccionDeConvenios = this.afs.collection('CONVENIOS');
+    this.coleccionDeConvenios = this.afs.collection('CONVENIOS',ref => {return ref.orderBy("ORDEN")});
     this.conveniosObs = this.coleccionDeConvenios.valueChanges();
     this.conveniosObs.subscribe(convenios => this.convenios = convenios);
   }

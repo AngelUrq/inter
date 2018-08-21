@@ -4,4 +4,5 @@ export interface Convenio{
     IMAGEN: string;
     LINK: string;
     LINK_OFICIAL: string;
+    ORDEN: number;
 }
