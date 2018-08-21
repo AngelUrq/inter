@@ -23,8 +23,8 @@ import { YoutubePlayerModule } from 'ngx-youtube-player';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { environment } from '../environments/environment';
-import { EventosComponent } from './secciones/eventos/eventos.component';
 import { VideoBackgroundComponent } from './video-background/video-background.component';
+import { ActividadesComponent } from './secciones/actividades/actividades.component';
 
 @NgModule({
   declarations: [
@@ -38,8 +38,8 @@ import { VideoBackgroundComponent } from './video-background/video-background.co
     MembresiasComponent,
     NoticiasComponent,
     ProgramasComponent,
-    EventosComponent,
-    VideoBackgroundComponent
+    VideoBackgroundComponent,
+    ActividadesComponent
   ],
   imports: [
     BrowserModule,
