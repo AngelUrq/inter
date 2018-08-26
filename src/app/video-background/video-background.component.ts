@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import * as $ from 'jquery';
 
 @Component({
@@ -11,8 +11,16 @@ export class VideoBackgroundComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    let botonSonido = document.getElementById("botonSonido");
+    botonSonido.addEventListener('click', this.activarSonido);
+
     let video = document.getElementById("mi-video") as HTMLMediaElement;
-    video.muted= true;
+    video.muted = false;
+  }
+
+  activarSonido() {
+    let video = document.getElementById("mi-video") as HTMLMediaElement;
+    video.muted = !video.muted;
   }
 
 }
