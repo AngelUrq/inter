@@ -15,7 +15,7 @@ export class VideoBackgroundComponent implements OnInit {
     botonSonido.addEventListener('click', this.activarSonido);
 
     let video = document.getElementById("mi-video") as HTMLMediaElement;
-    video.muted = false;
+    video.muted = true;
   }
 
   activarSonido() {

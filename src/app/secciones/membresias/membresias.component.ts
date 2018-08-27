@@ -19,7 +19,7 @@ export class MembresiasComponent implements OnInit {
   constructor(private afs: AngularFirestore) { }
 
   ngOnInit() {
-    this.coleccionDeMembresias = this.afs.collection('MEMBRESIAS');
+    this.coleccionDeMembresias = this.afs.collection('MEMBRESIAS',ref => {return ref.orderBy("ORDEN")});
     this.membresiasObs = this.coleccionDeMembresias.valueChanges();
     this.membresiasObs.subscribe(membresias => this.membresias = membresias);
   }
