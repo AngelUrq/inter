@@ -11,11 +11,11 @@ export class VideoBackgroundComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    let video = document.getElementById("mi-video") as HTMLMediaElement;
+    video.muted = true;
+
     let botonSonido = document.getElementById("botonSonido");
     botonSonido.addEventListener('click', this.activarSonido);
-
-    let video = document.getElementById("mi-video") as HTMLMediaElement;
-    video.muted = false;
   }
 
   activarSonido() {
