@@ -25,6 +25,7 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { environment } from '../environments/environment';
 import { VideoBackgroundComponent } from './video-background/video-background.component';
 import { ActividadesComponent } from './secciones/actividades/actividades.component';
+import { ProfesoresComponent } from './secciones/profesores/profesores.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ActividadesComponent } from './secciones/actividades/actividades.compon
     NoticiasComponent,
     ProgramasComponent,
     VideoBackgroundComponent,
-    ActividadesComponent
+    ActividadesComponent,
+    ProfesoresComponent
   ],
   imports: [
     BrowserModule,
