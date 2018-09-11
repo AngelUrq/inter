@@ -11,6 +11,8 @@ export class ActividadesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    let alto = $("#main").css("height");
+    $(".nav-side-menu").css("height", alto);
   }
 
 }
