@@ -4,6 +4,14 @@
     margin-top: 75px;
 }
 
+.fas {
+    padding: 10px;
+}
+
+.sr-icons {
+    color: rgb(41, 47, 109);
+}
+
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
@@ -18,16 +26,17 @@
     font-family: verdana;
     font-size: 12px;
     font-weight: 200;
-    background-color: #2e353d;
-    position: relative;
+    background-color: rgba(41, 47, 109, 0.9);
+    position: absolute;
     top: 0px;
     width: 300px;
-    color: #e1ffff;
+    color: rgba(41, 47, 109, 0.9);
     margin-top: 70px;
 }
 
 .nav-side-menu .brand {
-    background-color: #23282e;
+    background-color: rgba(41, 47, 109, 0.9);
+    color: white;
     line-height: 50px;
     display: block;
     text-align: center;
@@ -53,7 +62,6 @@
             padding-left: 10px;
             padding-right: 10px;
             vertical-align: middle;
-            float: right;
         }
     }
 }
@@ -95,7 +103,7 @@
 
 .nav-side-menu ul .sub-menu li:hover,
 .nav-side-menu li .sub-menu li:hover {
-    background-color: #020203;
+    background-color: yellow;
 }
 
 .nav-side-menu ul .sub-menu li:before,
@@ -110,8 +118,7 @@
 
 .nav-side-menu li {
     padding-left: 0px;
-    border-left: 3px solid #2e353d;
-    border-bottom: 1px solid #23282e;
+    //border-bottom: 1px solid black;
 }
 
 .nav-side-menu li a {
@@ -126,8 +133,8 @@
 }
 
 .nav-side-menu li:hover {
-    border-left: 3px solid #d19b3d;
-    background-color: #4f5b69;
+    border-left: 3px solid rgb(188, 199, 39);
+    background-color: rgb(188, 199, 39);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
@@ -150,7 +157,7 @@
         z-index: 10 !important;
         padding: 3px;
         background-color: #ffffff;
-        color: #000;
+        color: rgba(41, 47, 109, 0.9);
         width: 40px;
         text-align: center;
     }
@@ -175,4 +182,8 @@ h4,
 h5,
 h6 {
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+a {
+    color: rgb(41, 47, 109);
 }
