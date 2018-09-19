@@ -26,6 +26,7 @@ import { environment } from '../environments/environment';
 import { VideoBackgroundComponent } from './video-background/video-background.component';
 import { ActividadesComponent } from './secciones/actividades/actividades.component';
 import { ProfesoresComponent } from './secciones/profesores/profesores.component';
+import { PanelComponent } from './panel/panel.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ProfesoresComponent } from './secciones/profesores/profesores.component
     ProgramasComponent,
     VideoBackgroundComponent,
     ActividadesComponent,
-    ProfesoresComponent
+    ProfesoresComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,

@@ -13,7 +13,6 @@ export class ActividadesComponent implements OnInit {
   ngOnInit() {
     let alto = $(".main").css("height");
     $(".nav-side-menu").css("height", alto);
-    console.log("Alto:" + alto);
   }
 
 }

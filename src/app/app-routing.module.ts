@@ -6,6 +6,9 @@ import { MembresiasComponent } from './secciones/membresias/membresias.component
 import { ConveniosComponent } from './secciones/convenios/convenios.component';
 import { ArticuloComponent } from './articulo/articulo.component';
 import { ActividadesComponent } from './secciones/actividades/actividades.component';
+import { PanelComponent } from './panel/panel.component';
+import { ProfesoresComponent } from './secciones/profesores/profesores.component';
+import { NoticiasComponent } from './secciones/noticias/noticias.component';
 
 const routes: Routes = [
   {path: '', component: PortadaComponent},
@@ -14,6 +17,11 @@ const routes: Routes = [
   {path: 'membresias', component: MembresiasComponent},
   {path: 'convenios', component: ConveniosComponent},
   {path: 'articulo', component: ArticuloComponent},
+  {path: 'panel', component: PanelComponent},
+  {path: 'profesores', component: ProfesoresComponent},
+  {path: 'conferencias', component: PanelComponent},
+  {path: 'eventos', component: PanelComponent},
+  {path: 'noticias', component: NoticiasComponent},
 ];
 
 @NgModule({
