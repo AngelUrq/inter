@@ -1,14 +1,21 @@
 body {
     padding-top: 54px;
 }
-  
+
 @media (min-width: 992px) {
     body {
-      padding-top: 56px;
+        padding-top: 56px;
     }
 }
 
-.container{
-    padding-top: 70px;
+.container {
     align-content: center;
+}
+
+#articulo {
+    padding-top: 75px;
+}
+
+h1 {
+    color: rgba(41, 47, 109, 0.9);
 }

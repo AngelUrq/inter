@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import { generarID } from '../generador/generador';
 
 @Component({
   selector: 'portada',
@@ -13,6 +14,8 @@ export class PortadaComponent implements OnInit {
 
   ngOnInit() {
     console.log("Por Á.Z. ISC");
+
+    console.log(generarID());
   }
 
 }
