@@ -1,21 +1,25 @@
-#noticias {
+.main {
+    padding: 0px 10px;
     margin-top: 75px;
-    padding-left: 100px;
+}
+
+.fas {
+    padding: 10px;
+}
+
+.sr-icons {
+    color: rgb(41, 47, 109);
 }
 
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+a {
     color: rgb(41, 47, 109);
-}
-
-article {
-    margin-left: 45px;
-    margin-top: 30px;
-}
-
-.miniatura {
-    width: 300px;
-    height: 100px;
 }
