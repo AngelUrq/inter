@@ -27,6 +27,7 @@ import { VideoBackgroundComponent } from './video-background/video-background.co
 import { ActividadesComponent } from './secciones/actividades/actividades.component';
 import { ProfesoresComponent } from './secciones/profesores/profesores.component';
 import { PanelComponent } from './panel/panel.component';
+import { EventosComponent } from './secciones/eventos/eventos.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { PanelComponent } from './panel/panel.component';
     VideoBackgroundComponent,
     ActividadesComponent,
     ProfesoresComponent,
-    PanelComponent
+    PanelComponent,
+    EventosComponent
   ],
   imports: [
     BrowserModule,
