@@ -7,18 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventosComponent implements OnInit {
 
-  player: YT.Player;
-  id: string = '7EVzGcyz34U';
-
   constructor() { }
 
   ngOnInit() {
-  }
-
-  savePlayer(player) {
-    this.player = player;
-  }
-  onStateChange(event) {
   }
 
 }

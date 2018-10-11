@@ -10,6 +10,7 @@ import { PanelComponent } from './panel/panel.component';
 import { ProfesoresComponent } from './secciones/profesores/profesores.component';
 import { NoticiasComponent } from './secciones/noticias/noticias.component';
 import { EventosComponent } from './secciones/eventos/eventos.component';
+import { VisitasComponent } from './secciones/visitas/visitas.component';
 
 const routes: Routes = [
   {path: '', component: PortadaComponent},
@@ -23,6 +24,7 @@ const routes: Routes = [
   {path: 'conferencias', component: PanelComponent},
   {path: 'eventos', component: EventosComponent},
   {path: 'noticias', component: NoticiasComponent},
+  {path: 'visitas', component: VisitasComponent},
 ];
 
 @NgModule({
