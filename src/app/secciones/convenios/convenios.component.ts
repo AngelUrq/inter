@@ -24,4 +24,19 @@ export class ConveniosComponent implements OnInit {
     this.conveniosObs.subscribe(convenios => this.convenios = convenios);
   }
 
+  subtitular(i){
+    switch(i){
+      case 1:
+        return "Convenios de doble titulación";
+      case 3:
+        return "Convenios de titulación opcional";
+      case 4:
+        return "Convenios de desarrollo empresarial";
+      case 6:
+        return "Convenios de intercambio docente-alumno";
+    }
+
+    return "";
+  }
+
 }

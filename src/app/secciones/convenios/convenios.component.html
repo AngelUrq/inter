@@ -1,17 +1,19 @@
 <div class="container">
-   <h1 class="my-4">Convenios</h1>
-   <div *ngFor="let convenio of convenios" id="lista_convenios">
+    <h1 class="my-4">Convenios</h1>
+    <div *ngFor="let convenio of convenios" id="lista_convenios">
+        <h3>{{subtitular(convenio.ORDEN)}}</h3>
+        <br>
         <div class="row">
             <div class="col-md-4 col-centered">
                 <img class="img-fluid rounded mb-3 mb-md-0" style="width: 200px; height: 200px;" src="{{convenio.IMAGEN}}" alt="">
             </div>
             <div class="col-md-8">
-                <h3>{{convenio.NOMBRE}}</h3>
+                <h4>{{convenio.NOMBRE}}</h4>
                 <p>{{convenio.DESCRIPCION}}</p>
                 <a class="btn btn-primary" href="{{convenio.LINK}}">Averigua más</a>
                 <a class="btn btn-primary btn-derecha" href="{{convenio.LINK_OFICIAL}}">Visita la universidad</a>
             </div>
         </div>
         <hr>
-   </div>   
+    </div>
 </div>

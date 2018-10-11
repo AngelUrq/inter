@@ -1,48 +1,50 @@
-h1{
-    color: rgb(41,47,109);
+h1,
+h2,
+h3 {
+    color: rgb(41, 47, 109);
 }
 
 body {
     padding-top: 70px;
 }
 
-.container{
+.container {
     padding-top: 70px;
     align-content: center;
 }
-  
+
 @media (min-width: 992px) {
     body {
-      padding-top: 56px;
+        padding-top: 56px;
     }
 }
-  
+
 .portfolio-item {
     margin-bottom: 30px;
 }
-  
+
 .pagination {
     margin-bottom: 30px;
 }
 
 .col-centered {
-    display:inline-block;
-    float:none;
-    text-align:left;
-    margin-right:-4px;
+    display: inline-block;
+    float: none;
+    text-align: left;
+    margin-right: -4px;
     text-align: center;
 }
 
-.btn{
-    background-color: rgb(41,47,109);
-    border-color: rgb(41,47,109);
+.btn {
+    background-color: rgb(41, 47, 109);
+    border-color: rgb(41, 47, 109);
 }
 
-.btn:hover{
+.btn:hover {
     background-color: rgba(188, 199, 39, 0.808);
     border-color: rgba(188, 199, 39, 0.808);
 }
 
-.btn-derecha{
+.btn-derecha {
     margin-left: 25px;
 }
