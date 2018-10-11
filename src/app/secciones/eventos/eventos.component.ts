@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class EventosComponent implements OnInit {
 
   player: YT.Player;
-  private id: string = '7EVzGcyz34U';
+  id: string = '7EVzGcyz34U';
 
   constructor() { }
 
