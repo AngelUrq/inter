@@ -30,8 +30,6 @@ export class ArticuloComponent implements OnInit {
       document.getElementById("articulo").innerHTML = articulos[0].HTML;
     }
     );
-
-    
   } 
 
 }

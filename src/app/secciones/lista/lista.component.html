@@ -1,0 +1,12 @@
+<div class="container">
+    <div *ngFor="let seccion of listaSecciones">
+        <h1 class="my-4">{{seccion.NOMBRE}}</h1>
+        <div *ngFor="let art of listaArticulos">
+            <div class="card mb-4">
+                <a href="/articulo?{{art.ID}}">
+                    <img class="card-img-top" src="{{art.PORTADA}}" alt="{{art.NOMBRE}}">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

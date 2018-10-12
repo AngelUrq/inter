@@ -1,5 +1,7 @@
 export interface Articulo{
-    NOMBRE: string;
-    ID: string;
     HTML: string;
+    ID: string;
+    NOMBRE: string;
+    PORTADA: string;
+    SECCION: string;
 }

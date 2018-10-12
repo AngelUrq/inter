@@ -29,6 +29,7 @@ import { ProfesoresComponent } from './secciones/profesores/profesores.component
 import { PanelComponent } from './panel/panel.component';
 import { EventosComponent } from './secciones/eventos/eventos.component';
 import { VisitasComponent } from './secciones/visitas/visitas.component';
+import { ListaComponent } from './secciones/lista/lista.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { VisitasComponent } from './secciones/visitas/visitas.component';
     ProfesoresComponent,
     PanelComponent,
     EventosComponent,
-    VisitasComponent
+    VisitasComponent,
+    ListaComponent
   ],
   imports: [
     BrowserModule,
