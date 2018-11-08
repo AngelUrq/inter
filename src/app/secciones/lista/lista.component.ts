@@ -32,7 +32,7 @@ export class ListaComponent implements OnInit {
     this.coleccionDeSecciones = this.afs.collection('SECCIONES', ref => {return ref.where('ID','==',href)});
     this.seccionesObs = this.coleccionDeSecciones.valueChanges();
     this.seccionesObs.subscribe(secciones => this.listaSecciones = secciones);
-
+  
     this.coleccionDeArticulos = this.afs.collection('ARTICULOS',ref => {return ref.where('SECCION','==',href)});
     this.articulosObs = this.coleccionDeArticulos.valueChanges();
     this.articulosObs.subscribe(articulos => this.listaArticulos = articulos);

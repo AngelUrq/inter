@@ -30,6 +30,7 @@ import { PanelComponent } from './panel/panel.component';
 import { EventosComponent } from './secciones/eventos/eventos.component';
 import { VisitasComponent } from './secciones/visitas/visitas.component';
 import { ListaComponent } from './secciones/lista/lista.component';
+import { ForosComponent } from './foros/foros.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { ListaComponent } from './secciones/lista/lista.component';
     PanelComponent,
     EventosComponent,
     VisitasComponent,
-    ListaComponent
+    ListaComponent,
+    ForosComponent
   ],
   imports: [
     BrowserModule,

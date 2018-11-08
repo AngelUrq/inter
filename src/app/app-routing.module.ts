@@ -12,6 +12,7 @@ import { NoticiasComponent } from './secciones/noticias/noticias.component';
 import { EventosComponent } from './secciones/eventos/eventos.component';
 import { VisitasComponent } from './secciones/visitas/visitas.component';
 import { ListaComponent } from './secciones/lista/lista.component';
+import { ForosComponent } from './foros/foros.component';
 
 const routes: Routes = [
   {path: '', component: PortadaComponent},
@@ -27,6 +28,7 @@ const routes: Routes = [
   {path: 'noticias', component: NoticiasComponent},
   {path: 'visitas', component: VisitasComponent},
   {path: 'lista', component: ListaComponent},
+  {path: 'foros', component: ForosComponent},
 ];
 
 @NgModule({
