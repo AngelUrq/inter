@@ -1,4 +1,5 @@
 export interface Articulo{
+    HREF: string;
     HTML: string;
     ID: string;
     NOMBRE: string;

@@ -23,7 +23,7 @@ export class ListaComponent implements OnInit {
 
   constructor(private afs: AngularFirestore, private router : Router) {
     
-   }
+  }
 
   ngOnInit() {
     let href = this.router.url;

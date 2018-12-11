@@ -3,7 +3,7 @@
         <h1 class="my-4">{{seccion.NOMBRE}}</h1>
         <div *ngFor="let art of listaArticulos">
             <div class="card mb-4">
-                <a href="/articulo?{{art.ID}}">
+                <a href="{{art.HREF}}">
                     <img class="card-img-top" src="{{art.PORTADA}}" alt="{{art.NOMBRE}}">
                 </a>
             </div>
