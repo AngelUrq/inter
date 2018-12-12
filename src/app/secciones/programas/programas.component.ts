@@ -11,6 +11,7 @@ export class ProgramasComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log("Nuevo id: " + generarID());
   }
 
 }

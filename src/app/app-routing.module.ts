@@ -13,6 +13,7 @@ import { EventosComponent } from './secciones/eventos/eventos.component';
 import { VisitasComponent } from './secciones/visitas/visitas.component';
 import { ListaComponent } from './secciones/lista/lista.component';
 import { ForosComponent } from './foros/foros.component';
+import { ContactonavComponent } from './contactonav/contactonav.component';
 
 const routes: Routes = [
   {path: '', component: PortadaComponent},
@@ -29,6 +30,7 @@ const routes: Routes = [
   {path: 'visitas', component: VisitasComponent},
   {path: 'lista', component: ListaComponent},
   {path: 'foros', component: ForosComponent},
+  {path: 'contacto', component: ContactonavComponent},
 ];
 
 @NgModule({

@@ -31,6 +31,7 @@ import { EventosComponent } from './secciones/eventos/eventos.component';
 import { VisitasComponent } from './secciones/visitas/visitas.component';
 import { ListaComponent } from './secciones/lista/lista.component';
 import { ForosComponent } from './foros/foros.component';
+import { ContactonavComponent } from './contactonav/contactonav.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { ForosComponent } from './foros/foros.component';
     EventosComponent,
     VisitasComponent,
     ListaComponent,
-    ForosComponent
+    ForosComponent,
+    ContactonavComponent
   ],
   imports: [
     BrowserModule,
